@@ -22,7 +22,8 @@ const Home = () => {
                     product.map(phones=><Phone phones={phones}></Phone>)
                 }
              </div>
-              <Outlet></Outlet>
+             <Outlet></Outlet>
+             
             <Footer></Footer>
         </div>
     );
