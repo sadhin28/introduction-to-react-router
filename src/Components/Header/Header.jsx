@@ -1,14 +1,14 @@
 import React from 'react';
-
+import { Link } from 'react-router-dom';
 const Header = () => {
     return (
-        <div>
+        <div className='flex font-bold justify-between '>
             <h2>Navbar</h2>
-            <ul className='font-bold flex gap-5'>
-                <a href="/">Home</a>
-                <a href="/about">About</a>
-                <a href="/contact">Contact Us</a>
-            </ul>
+            <nav className='font-bold flex gap-5'>
+                <Link to="/">Home</Link>
+                <Link to="/about">About</Link>
+                <Link to="/contact">Contact Us</Link>
+            </nav>
         </div>
     );
 };

@@ -1,10 +1,13 @@
 import { Outlet } from "react-router-dom";
+import Header from "../Header/Header";
+import Footer from "../Footer/Footer";
 
 const Home = () => {
     return (
         <div className="">
-            <h2 className="text-center text-3xl font-bold">His is the home Component</h2>
+            <Header></Header>
             <Outlet></Outlet>
+            <Footer></Footer>
         </div>
     );
 };

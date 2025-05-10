@@ -12,7 +12,7 @@ import Header from './Components/Header/Header';
 const router = createBrowserRouter([
   {
     path: '/',
-    element:<Header></Header>,
+    element:<Home></Home>,
     children: [
       {
         path: '/about',
