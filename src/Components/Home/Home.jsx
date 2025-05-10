@@ -6,12 +6,15 @@ import Phone from "../Phone/Phone";
 const Home = () => {
     const phone = useLoaderData()
     return (
-        <div className="">
+        <div className="flex-grow">
             <Header></Header>
              
-             <Outlet></Outlet>
+            <div className="flex-grow">
+                  <Outlet></Outlet>
+                   <Footer></Footer>
+            </div>
              
-            <Footer></Footer>
+           
         </div>
     );
 };
