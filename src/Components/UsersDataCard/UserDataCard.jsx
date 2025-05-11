@@ -8,7 +8,7 @@ const UserDataCard = ({UserData}) => {
            <h2>Name:{name} </h2>
            <h2>Email: {email}</h2>
            <h2>Phone: {phone}</h2>
-           <Link></Link>
+           <Link className='text-sm border-2 p-2 rounded-tl-2xl hover:shadow-2xs hover:bg-black hover:text-white rounded-br-2xl' to={`/UserData/${id}`}>Show Details</Link>
         </div>
     );
 };
