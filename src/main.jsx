@@ -10,11 +10,13 @@ import {
 import Header from './Components/Header/Header';
 import Home from './Components/Home/Home';
 import About from './Components/About/About';
+import Notfound from './Components/Notfound/Notfound';
 
 const router = createBrowserRouter([
        {
         path:'/',
         element:<Header></Header>
+        
        
        },
        {
@@ -24,6 +26,10 @@ const router = createBrowserRouter([
        {
         path:'/about',
         element:<About></About>
+       },
+       {
+        path:'*',
+        element:<Notfound></Notfound>
        }
     ]
 
