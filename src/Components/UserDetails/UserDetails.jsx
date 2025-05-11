@@ -5,8 +5,8 @@ const UserDetails = () => {
     const data = useLoaderData();
    const {name,email}=data
     return (
-        <div className='border-4 p-5 rounded-2xl text-center text-2xl font-black'>
-             <h1>Name: {name}</h1>
+        <div className='border-4 p-5 rounded-2xl text-2xl font-black'>
+             <h1 className=''>Name: {name}</h1>
              <h2>Email: {email}</h2>
         </div>
     );
