@@ -5,7 +5,7 @@ const Postdetails = () => {
 
    const d =useLoaderData();
     return (
-        <div>
+        <div className=''>
             <h1>Title : {d.title}</h1>
             <p>Description : {d.body}</p>
         </div>
