@@ -2,10 +2,11 @@ import { Link} from "react-router-dom";
 
 const Header = () => {
     return (
-        <div>
+        <div className="flex justify-end gap-4 ">
         
-         <Link to='home'>Home</Link>
+         <Link to='/'>Home</Link>
          <Link to='about'>About</Link>
+         <Link to='contact'>Contact Us</Link>
         </div>
     );
 };

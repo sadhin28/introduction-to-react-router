@@ -7,33 +7,37 @@ import {
   createBrowserRouter,
   RouterProvider,
 } from "react-router-dom";
-import Header from './Components/Header/Header';
+
 import Home from './Components/Home/Home';
 import About from './Components/About/About';
 import Notfound from './Components/Notfound/Notfound';
+import Contact from './Components/Contact/Contact';
 
 const router = createBrowserRouter([
-       {
-        path:'/',
-        element:<Header></Header>
-        
-       
-       },
-       {
-        path:'/home',
-        element:<Home></Home>
-       },
-       {
-        path:'/about',
-        element:<About></About>
-       },
-       {
-        path:'*',
-        element:<Notfound></Notfound>
-       }
+  {
+    path: '/',
+    element: <Home></Home>,
+    children: [
+      {
+        path: '/about',
+        element: <About></About>
+      },
+      {
+        path:'/contact',
+        element:<Contact></Contact>
+      }
     ]
 
-  )
+
+  },
+
+  {
+    path: '*',
+    element: <Notfound></Notfound>
+  }
+]
+
+)
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
